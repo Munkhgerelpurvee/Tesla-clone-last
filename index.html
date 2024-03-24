@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Tesla Website</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color:none;
+            width: 100vw;
+            color: #f4f4f4;
+            backdrop-filter: blur(4px);
+            background-size: cover;
+
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 40px;
+
+        }
+
+        span a {
+            margin-left: 50px;
+            display: blocks;
+        }
+
+        #logo {
+            margin-top: auto;
+        }
+
+        button {
+            height: 40px;
+            width: 264px;
+            padding: 11px 40px;
+            text-align: center;
+            border: none;
+            display: flex;
+            align-items: centers;
+            border-radius: 4px;
+            justify-content: center;
+
+        }
+
+        #btn-white {
+            background-color: rgba(244, 244, 244, 0.8);
+            color: #333;
+            backdrop-filter: blur(4px);
+        }
+
+        #btn-black {
+            background-color: rgba(4, 3, 6, 0.9);
+            color: #f4f4f4;
+            backdrop-filter: blur(4px);
+        }
+
+
+
+
+
+        #section-1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-image: url("./pic9.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: url(./
+            imgs/pic9.jpg) no-repeat center center/cover; */
+
+
+
+
+        }
+
+
+
+
+
+        #menu-id {
+            position: relative;
+        }
+
+        .description {
+            margin-top: 72px;
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+
+        }
+
+        .description h1 {
+
+
+            font-size: 40px;
+            line-height: 48px;
+
+            margin-top: 148px;
+        }
+
+        .description h3 {
+            font-size: 20px;
+            line-height: 20px;
+
+        }
+
+        .description p {
+            font-size: 12px;
+            line-height: 20px;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            text-align: center;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        #bottom-span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        #bottom-span .bottom-a {
+            color: #fff;
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+
+
+        }
+
+
+        /* Section-2 styings */
+
+        #section-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-image: url("./pic8.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: url(./
+            imgs/pic9.jpg) no-repeat center center/cover; */
+
+
+
+
+        }
+
+        .description2 h1 {
+
+
+            font-size: 40px;
+            line-height: 48px;
+
+            margin-top: 148px;
+        }
+
+        .description2 p {
+            font-size: 12px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+
+        }
+
+        /* Section-3 Styling */
+        #section-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-image: url("./pic7.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: url(./
+            imgs/pic9.jpg) no-repeat center center/cover; */
+
+
+
+
+        }
+
+        .description3 h1 {
+
+
+            font-size: 40px;
+            line-height: 48px;
+
+            margin-top: 148px;
+        }
+
+        .description3 p {
+            font-size: 12px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+
+        }
+
+        /* Section-4 Styling */
+
+        #section-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            background-image: url("./pic6.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: url(./
+            imgs/pic9.jpg) no-repeat center center/cover; */
+
+
+
+
+        }
+
+        .description4 h1 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-top: 148px;
+        }
+
+        .description4 p {
+            font-size: 12px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+
+        }
+
+        /* Section-5 Styling */
+        #section-5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+            background-image: url("./pic5.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: url(./
+            imgs/pic9.jpg) no-repeat center center/cover; */
+
+
+
+
+        }
+
+        .btn-container5 {
+            position: absolute;
+            bottom: 100px;
+            z-index: 1;
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Section-6 Styling */
+
+        #section-6 {
+            position: relative;
+        }
+        .video {
+            /* width: 100vw;
+            height: 100vh; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .video source {
+            width: 100%;
+            height: 100%;
+        }
+
+        .absolute {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            left: 0;
+            top: 0;
+            align-items: center;
+            width: 100%;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./Site Logo.svg" alt="Tesla logo" id="logo">
+        <div id="menu-id">
+
+            <a class="menu-item" href="#section-1">Vehicles</a>
+            <a class="menu-item" href="#section-2">Energy</a>
+            <a class="menu-item" href="#section-3">Charhing</a>
+            <a class="menu-item" href="#section-4">Discover</a>
+            <a class="menu-item" href="#model5">Shop</a>
+
+        </div>
+
+    </header>
+    <section id="section-1">
+        <div class="description">
+            <h1>Model Y</h1>
+            <h3 class="model-price">From $31.890*</h3>
+            <p>After Federal Tax Cridet & Est. Gas savings</p>
+
+        </div>
+        <div class="content">
+
+            <div class="btn-container">
+                <button id="btn-white">Shop avalibli</button>
+                <button id="btn-black">Dimo drive</button>
+            </div>
+
+
+
+            <div id="bottom-span">
+                <span> *Price before incentives and savings is $42,990, excluding taxes and fees. Subject to
+                    change.</span>
+                <br><br>
+                <a class="bottom-a" href="#">Learn about est. Gas savings.</a>
+            </div>
+        </div>
+
+        <!-- <img src="./pic9.jpeg" alt="" width="150" height="100"> -->
+
+
+    </section>
+
+
+    <section id="section-2">
+        <div class="description2">
+            <h1>Brand New Model 3</h1>
+            <p class="model-price2">Lease starting at $329/mo*</p>
+
+
+        </div>
+        <div class="content">
+
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Dimo drive</button>
+            </div>
+
+
+
+            <div id="bottom-span">
+                <span> *Excludes taxes and fees with price subject to change. Available in select states.</span>
+                <br><br>
+                <a class="bottom-a" href="#">See Details</a>
+            </div>
+        </div>
+
+        <!-- <img src="./pic9.jpeg" alt="" width="150" height="100"> -->
+
+
+    </section>
+
+    <section id="section-3">
+        <div class="description3">
+            <h1>Model X</h1>
+            <h3 class="model-price">From $68,590*</h3>
+            <p>After Federal Tax Cridet & Est. Gas savings</p>
+
+        </div>
+        <div class="content">
+
+            <div class="btn-container">
+                <button id="btn-white">Custom Order</button>
+                <button id="btn-black">Dimo drive</button>
+            </div>
+
+
+
+            <div id="bottom-span">
+                <span> *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to
+                    change.</span>
+                <br><br>
+                <a class="bottom-a" href="#">Learn about est. Gas savings.</a>
+            </div>
+        </div>
+
+        <!-- <img src="./pic9.jpeg" alt="" width="150" height="100"> -->
+
+
+    </section>
+
+    <section id="section-4">
+        <div class="description4">
+            <h1>Model S</h1>
+            <h3 class="model-price">From $71.090*</h3>
+            <p>After Est. Gas savings</p>
+
+        </div>
+        <div class="content">
+
+            <div class="btn-container">
+                <button id="btn-white">Custem order</button>
+                <button id="btn-black">Dimo drive</button>
+            </div>
+
+
+
+            <div id="bottom-span">
+                <span> *Price before savings is $74,990, excluding taxes and fees. Subject to change.</span>
+                <br><br>
+                <a class="bottom-a" href="#">Learn about est. Gas savings.</a>
+            </div>
+        </div>
+
+        <!-- <img src="./pic9.jpeg" alt="" width="150" height="100"> -->
+
+
+    </section>
+
+    <section id="section-5">
+
+
+
+        <div class="btn-container5">
+
+            <button id="btn-white">Custem order</button>
+            <button id="btn-black">Dimo drive</button>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <section id="section-6">
+        <video class="video" muted allowfullscreen loop autoplay>b
+
+            <source src="./video1.mp4"  type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <div class="absolute">
+                <div>
+                    <h1>Model Y</h1>
+                <h3 class="model-price">From $31.890*</h3>
+                <p>After Federal Tax Cridet & Est. Gas savings</p>
+                
+                </div>
+                <div class="content">
+
+                    <div class="btn-container">
+                        <button id="btn-white">Shop avalibli</button>
+                        <button id="btn-black">Dimo drive</button>
+                    </div>
+        
+        
+        
+                    <div id="bottom-span">
+                        <span> *Price before incentives and savings is $42,990, excluding taxes and fees. Subject to
+                            change.</span>
+                        <br><br>
+                        <a class="bottom-a" href="#">Learn about est. Gas savings.</a>
+                    </div>
+                </div>
+
+            </div>
+            
+
+    
+       
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
